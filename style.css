@@ -1,0 +1,91 @@
+body {
+    font-family: "Inter", serif;
+    background-color: #f7f7f7;
+}
+
+/* hided navbar */
+.navbar {
+    height: 85px;
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* 调整阴影的透明度 */
+    transition: opacity 1s ease, visibility 1s ease; /* Adds smooth fading effect */
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.custom-navbar {
+    /* background-color: #7b4184 !important; 强制应用背景色 */
+    /* background-color: rgba(123, 65, 132, 0.5) !important; 半透明背景色 */
+    background-color: rgba(225, 110, 170, 0.5) !important; /* 半透明粉色 */
+    
+}
+
+
+.custom-navbar .navbar-brand {
+    color: #ffffff !important; /* 强制应用白色文字 */ 
+}
+
+.custom-navbar .nav-link {
+    color: #ffffff !important; /* 强制应用文字颜色 */
+}
+/* handwriting name*/
+@keyframes handwriting {
+    0% {
+        width: 0; /* 开始时宽度为0 */
+    }
+    50% {
+        width: 100%; /* 中间时宽度为100% */
+    }
+    100% {
+        width: 0; /* 结束时宽度为0 */
+    }
+}
+
+.navbar-brand {
+    font-family: "Imperial Script", cursive;
+    font-weight: 400;
+    font-size: 40px;
+    display: inline-block;
+    overflow: hidden; /* 隐藏溢出文本 */
+    white-space: nowrap; /* 防止换行 */
+    animation: handwriting 6s steps(30) infinite; /* 手写动画 */
+}
+
+
+
+
+
+
+/* for other section to scroll over */
+/* Fixed header */
+header {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1; /* Low enough for other sections to scroll over */
+    background-color: transparent; /* Or set a desired color */
+    transition: transform 0.3s ease-in-out; /* Smooth sliding effect */
+}
+
+/* Higher z-index for scrolling content */
+#about, #portfolio, #contact {
+    margin-top: 100vh; /* Matches header height */
+    background-color: violet;
+    position: relative;
+    z-index: 2; /* Higher than the header */
+    
+}
+
+
+
+           
+
+
+

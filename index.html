@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Jia Xu</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Imperial Script -->
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Library for animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Your custom CSS -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home"><span id="typed-output">Jia Xu</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item" ><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Vertical Menu -->
+    <header class="hero-section text-center py-5" data-aos="fade-up">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore my work in UI/UX, Graphic Design, Motion Design, 3D, and more.</p>
+            <div class="d-flex flex-column align-items-center">
+                <a href="#home" class="btn btn-link">Home</a>
+                <a href="#about" class="btn btn-link">About</a>
+                <a href="#portfolio" class="btn btn-link">Portfolio</a>
+                <a href="contact.html" class="btn btn-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>[Your brief personal statement about who you are, your design philosophy, etc.]</p>
+            <p><strong>Contact me:</strong> xjia5036@gmail.com | Phone: 4375997360</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Portfolio</h2>
+            <div class="row gy-4" data-aos="fade-up">
+                <!-- UI/UX Design -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="[mockup-image-url]" class="card-img-top" alt="UI/UX Design App">
+                        <div class="card-body">
+                            <h5 class="card-title">UI/UX Design</h5>
+                            <p class="card-text">A detailed case study of an app project.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Graphic Design -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="[mockup-image-url]" class="card-img-top" alt="Graphic Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Graphic Design</h5>
+                            <p class="card-text">Includes advanced book, brand book, and magazine.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Motion Design -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <video controls class="w-100">
+                            <source src="[motion-design-video.mp4]" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">Motion Design</h5>
+                            <p class="card-text">An animation video showcasing my skills.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3D Projects -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <video controls class="w-100">
+                            <source src="[3d-stage-video1.mp4]" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">3D Stage 1</h5>
+                            <p class="card-text">First 3D stage mockup.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <video controls class="w-100">
+                            <source src="[3d-stage-video2.mp4]" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">3D Stage 2</h5>
+                            <p class="card-text">Second 3D stage mockup.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Interactive Media Business -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="[marketing-strategy-image-url]" class="card-img-top" alt="Interactive Media Business">
+                        <div class="card-body">
+                            <h5 class="card-title">Interactive Media Business</h5>
+                            <p class="card-text">Marketing strategy and campaign design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/xrbgpnak" method="POST" enctype="multipart/form-data" novalidate>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="fname" class="form-label">First Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="fname" name="fname" required placeholder="Enter your first name">
+                        <div class="invalid-feedback">Please enter your first name.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lname" class="form-label">Last Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="lname" name="lname" required placeholder="Enter your last name">
+                        <div class="invalid-feedback">Please enter your last name.</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                    <textarea class="form-control" name="message" id="message" rows="3" required placeholder="Your message"></textarea>
+                    <div class="invalid-feedback">Please enter your message.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>           
+        </div>
+    </section>
+    <!-- transparent section -->
+    <section class="spacer" style="height: 100vh; background: transparent;"></section>
+
+    <!-- AOS and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS animations
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
