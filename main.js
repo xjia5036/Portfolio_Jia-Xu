@@ -38,19 +38,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-/* contact form require function */
+// type writing
+const words = ["UI/UX", "Graphic Design", "Motion Design", "3D", "and more"];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const dynamicTextElement = document.getElementById("dynamic-text");
 
-// Example of Bootstrap validation
-(function () {
-    'use strict'
-    var forms = document.querySelectorAll('form')
-    Array.prototype.slice.call(forms).forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-            }
-            form.classList.add('was-validated')
-        }, false)
-    })
-})()
+function typeEffect() {
+    let currentWord = words[wordIndex].slice(0, isDeleting ? --charIndex : ++charIndex);
+    dynamicTextElement.textContent = currentWord;
+
+    if (!isDeleting && charIndex === words[wordIndex].length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1000);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(typeEffect, 500);
+    } else {
+        setTimeout(typeEffect, isDeleting ? 50 : 100);
+    }
+}
+
+typeEffect();
+

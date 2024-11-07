@@ -20,49 +20,34 @@
      <link rel="stylesheet" href="contact.css"> <!-- Your custom CSS -->
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="#home"><span id="typed-output">Jia Xu</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-center">
-                    <li class="nav-item" ><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <!-- Contact Section -->
 
     <section id="contact" class="py-5" data-aos="fade-up">
-        <div class="container">
-            <h2>Contact</h2>
+        <div class="container py-5 d-flex flex-column align-items-center" data-aos="fade-up" data-aos-duration="1500">
+            <div class="text-center mb-4">
+                <img src="assets/images/logo_violet.png" alt="Logo" class="img-fluid logo-effect" style="max-width: 130px;">
+            </div>
+            <h2>Contact with me</h2>
             <form action="https://formspree.io/f/xrbgpnak" method="POST" enctype="multipart/form-data" novalidate>
                 <div class="row mb-3">
                     <div class="col-md-6">
-                        <label for="fname" class="form-label">First Name <span class="text-danger">*</span></label>
+                        <label for="fname" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="fname" name="fname" required placeholder="Enter your first name">
                         <div class="invalid-feedback">Please enter your first name.</div>
                     </div>
                     <div class="col-md-6">
-                        <label for="lname" class="form-label">Last Name <span class="text-danger">*</span></label>
+                        <label for="lname" class="form-label">Last Name</label>
                         <input type="text" class="form-control" id="lname" name="lname" required placeholder="Enter your last name">
                         <div class="invalid-feedback">Please enter your last name.</div>
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email address <span class="text-danger">*</span></label>
+                    <label for="email" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email">
                     <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                    <label for="message" class="form-label">Message</label>
                     <textarea class="form-control" name="message" id="message" rows="3" required placeholder="Your message"></textarea>
                     <div class="invalid-feedback">Please enter your message.</div>
                 </div>
@@ -70,6 +55,41 @@
             </form>           
         </div>
     </section>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container" id="contactNav">
+            <a class="navbar-brand" href="index.html"><span id="typed-output">Jia Xu</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- pop up menu -->
+            <div class="offcanvas offcanvas-end" id="offcanvasNav">
+                <!-- burger icon -->
+                <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close" style="background: transparent; border: none;">
+                    <img src="assets/images/close.png" alt="Close" style="width: 40px; height: 40px;">
+                </button>
+                
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav d-lg-none d-flex align-items-center">
+                      <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                      <li class="nav-item"><a class="nav-link" href="about/about.html">ABOUT</a></li>
+                      <li class="nav-item"><a class="nav-link" href="portfolio/portfolio.html">PORTFOLIO</a></li>
+                      <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>                        
+                    </ul>
+                  </div>
+                  
+            </div>           
+            <!-- hidden navagation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item" ><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about/about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio/portfolio.html">PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- AOS and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -78,6 +98,6 @@
     <script>
         AOS.init(); // Initialize AOS animations
     </script>
-    <script src="main.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>

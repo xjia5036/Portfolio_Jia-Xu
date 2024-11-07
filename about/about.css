@@ -1,8 +1,13 @@
-
-/* body styles */
 body {
     font-family: "Inter", serif;
     background-color: #f7f7f7;
+}
+#about {
+    margin-top: 60px;
+}
+#photo {
+    width: 500px;
+    height: auto;
 }
 
 /* navbar */
@@ -109,61 +114,36 @@ body {
     padding: 0;
 }
 
-/* contact section */
-#contact {
-    margin-top: 70px;
+/* about content */
+#about {
+    padding: 50px 0;
 }
 
-
-/* form container */
-form {
-    margin-top: 40px;
-}
-.container {
-    gap: 20px;
+#photo {
+    width: 80%;
+    height: auto;
 }
 
-/* logo effect */
-@keyframes ripple {
-    0% {
-        transform: translateY(20px) scale(1);
-        filter: blur(0px);
+.resume-images img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#resumeContent {
+    display: none;
+}
+#resumebtn .btn {
+    background-color: #7b4184;
+}
+
+@media (max-width: 767px) {
+    #about .row {
+        text-align: center;
     }
-    50% {
-        transform: translateY(10px) scale(1.05);
-        filter: blur(2px);
-    }
-    100% {
-        transform: translateY(0) scale(1);
-        filter: blur(0px);
+
+    #photo {
+        max-width: 80%;
+        margin-bottom: 20px;
     }
 }
-
-.logo-effect {
-    animation: ripple 1.5s ease-in-out forwards; /* 设置时长1.5秒并运行一次 */
-}
-
-/* form styles */
-/* button styles */
-.btn-primary {
-    width: 100%;  /* Makes the button take the full width of the container */
-    height: 45px;
-    background-color: #7b4184; /* Replace with your specific purple hex code */
-    border-color: #7b4184;
-    font-weight: bold;
-    font-size: large;
-}
-
-.btn-primary:hover {
-    background-color: #5c0066; /* A slightly darker purple for hover effect */
-    border-color: #5c0066;
-}
-/* placeholder styles */
-::placeholder {
-    font-size: 0.9rem; /* Smaller text */
-}
-
-textarea {
-    resize: none; /* Disables resizing */
-}
-

@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- alumni -->
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- Imperial Script -->
     <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     
@@ -23,35 +25,74 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="#home"><span id="typed-output">Jia Xu</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container" id="contactNav">
+            <a class="navbar-brand" href="index.html"><span id="typed-output">Jia Xu</span></a>
+            <!-- burger icon -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- pop up menu -->
+            <div class="offcanvas offcanvas-end" id="offcanvasNav">
+                <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close" style="background: transparent; border: none;">
+                    <img src="assets/images/close.png" alt="Close" style="width: 40px; height: 40px;">
+                </button>
+                
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav d-lg-none d-flex align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about/about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio/portfolio.html">PORTPOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>                        
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <!-- hidden navagation -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto text-center">
-                    <li class="nav-item" ><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about/about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio/portfolio.html">PORTPOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section with Vertical Menu -->
-    <header class="hero-section text-center py-5" data-aos="fade-up">
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Explore my work in UI/UX, Graphic Design, Motion Design, 3D, and more.</p>
-            <div class="d-flex flex-column align-items-center">
-                <a href="#home" class="btn btn-link">Home</a>
-                <a href="#about" class="btn btn-link">About</a>
-                <a href="#portfolio" class="btn btn-link">Portfolio</a>
-                <a href="contact.html" class="btn btn-link">Contact</a>
+    <header id="hero" class="hero-section text-center py-5 d-flex align-items-center" data-aos="fade-up" 
+    style="background-image: linear-gradient(to right, rgba(225, 110, 170, 0.1), rgba(123, 65, 131, 0.8)), url('assets/images/background.jpg'); 
+            background-size: cover; background-position: center;">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <!-- Logo -->
+            <img id="heroLogo" src="assets/videos/Logo_for gif_1.gif" alt="Animated GIF" class="logo" style="max-width:30%; height:auto;">
+
+            <div id="heroText" class="text-center text-md-start" style="color: white;">
+                <h1 class="herotext1">Hello, I am Jia Xu</h1>
+                <h1 class="herotext2">Welcome to My Portfolio</h1>
+                <p class="herotext3">
+                    Explore my work in <span id="dynamic-text"></span>
+                </p>
+                
+                
+            </div>
+            
+
+            <!-- Links -->
+            <div id="heroLink" class="d-flex flex-column align-items-center d-none d-md-flex">
+                <a href="index.html" class="btn btn-link">HOME</a>
+                <a href="about/about.html" class="btn btn-link">ABOUT</a>
+                <a href="portfolio/portfolio.html" class="btn btn-link">PORTFOLIO</a>
+                <a href="contact.html" class="btn btn-link">CONTACT</a>
             </div>
         </div>
+        <a href="https://www.linkedin.com/in/jiaxu-26a15p" target="_blank" class="linkedin-button">
+            <img src="assets/images/linkedin 2.png" alt="LinkedIn" style="width: 25px; height: 25px;">
+        </a>
+        
     </header>
+
 
     <!-- About Section -->
     <section id="about" class="py-5" data-aos="fade-up">
@@ -139,38 +180,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-
-    <section id="contact" class="py-5" data-aos="fade-up">
-        <div class="container">
-            <h2>Contact</h2>
-            <form action="https://formspree.io/f/xrbgpnak" method="POST" enctype="multipart/form-data" novalidate>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="fname" class="form-label">First Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="fname" name="fname" required placeholder="Enter your first name">
-                        <div class="invalid-feedback">Please enter your first name.</div>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="lname" class="form-label">Last Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="lname" name="lname" required placeholder="Enter your last name">
-                        <div class="invalid-feedback">Please enter your last name.</div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email">
-                    <div class="invalid-feedback">Please enter a valid email address.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-                    <textarea class="form-control" name="message" id="message" rows="3" required placeholder="Your message"></textarea>
-                    <div class="invalid-feedback">Please enter your message.</div>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>           
-        </div>
-    </section>
     <!-- transparent section -->
     <section class="spacer" style="height: 100vh; background: transparent;"></section>
 

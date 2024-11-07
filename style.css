@@ -3,10 +3,10 @@ body {
     background-color: #f7f7f7;
 }
 
-/* hided navbar */
+/* navbar */
 .navbar {
-    height: 85px;
-    display: none;
+    height: 80px;
+    display: block;
     position: fixed;
     top: 0;
     width: 100%;
@@ -20,45 +20,93 @@ body {
 }
 
 .custom-navbar {
-    /* background-color: #7b4184 !important; 强制应用背景色 */
+    background-color: #7b4184 !important; /*强制应用背景色*/
     /* background-color: rgba(123, 65, 132, 0.5) !important; 半透明背景色 */
-    background-color: rgba(225, 110, 170, 0.5) !important; /* 半透明粉色 */
+    /* background-color: rgba(225, 110, 170, 0.5) !important; 半透明粉色 */
+    /* background-color: rgba(90, 48, 98, 0.5) !important; */
     
 }
 
 
 .custom-navbar .navbar-brand {
-    color: #ffffff !important; /* 强制应用白色文字 */ 
+    color: #ffffff; /* 强制应用白色文字 */ 
 }
 
 .custom-navbar .nav-link {
-    color: #ffffff !important; /* 强制应用文字颜色 */
+    color: #ffffff; /* 强制应用文字颜色 */
 }
 /* handwriting name*/
-@keyframes handwriting {
+/* @keyframes handwriting {
     0% {
-        width: 0; /* 开始时宽度为0 */
-    }
-    50% {
-        width: 100%; /* 中间时宽度为100% */
+        width: 0;
     }
     100% {
-        width: 0; /* 结束时宽度为0 */
+        width: 100%;
     }
+} */
+/* burger menu white */
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 viewBox%3D%220 0 30 30%22%3E%3Cpath stroke%3D%22white%22 stroke-width%3D%222%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
 }
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.navbar-toggler:hover {
+    background-color: #7b4184;
+    box-shadow: 0 0 10px rgba(123, 65, 132, 0.2); /* Adds a subtle shadow */
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* pop up menu*/
+#offcanvasNav {
+    width: 100%;  /* Make the off-canvas take full screen width */
+    background-color: #7b4184;
+}
+.offcanvas-body {
+    font-weight: 500;
+    font-size: x-large;
+}
+.offcanvas-body .navbar-nav{
+    margin-top: 100px;
+}
+/* close button */
+.offcanvas-header {
+    position: relative;
+}
+
+.btn-close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
 
 .navbar-brand {
     font-family: "Imperial Script", cursive;
     font-weight: 400;
     font-size: 40px;
     display: inline-block;
-    overflow: hidden; /* 隐藏溢出文本 */
-    white-space: nowrap; /* 防止换行 */
-    animation: handwriting 6s steps(30) infinite; /* 手写动画 */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: handwriting 4s steps(30) forwards; /* 修改为 forwards，动画结束时保持最后状态 */
+    animation-iteration-count: 1; /* 动画只执行一次 */
+    margin: 0;
+    padding: 0;
 }
-
-
-
+/* link hover */
+/* Hover effect for navbar links */
+.navbar-nav .nav-link:hover {
+    color: #e16eaa; /* Change this color to any you like */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
 
 
 
@@ -70,17 +118,110 @@ header {
     top: 0;
     width: 100%;
     z-index: 1; /* Low enough for other sections to scroll over */
-    background-color: transparent; /* Or set a desired color */
+    /* background-color: transparent; Or set a desired color */
     transition: transform 0.3s ease-in-out; /* Smooth sliding effect */
+    
 }
-
+/* #hero {
+    background-image: url(../Portfolio_Jia-Xu/assets/images/final\ staging-Camera_084.png);
+} */
+#hero .container{
+    justify-content: space-between;
+}
+#heroLogo {
+    /* transform: translateX(-20%); */
+    margin: 0 auto;
+}
+#heroLink {
+    transform: translateX(80%);
+    
+}
+#heroLink .btn {
+    font-size: large;
+    color:white;
+    text-decoration: none;
+    margin: 5px 0;
+    
+}
+#heroLink .btn:hover {
+    color: #e16eaa; /* Change this color to any you like */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+#heroText {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    margin-left: 200px;
+}
+.herotext1 {
+    font-size: 100px;
+}
+.herotext2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.herotext3 {
+    width: 900px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/* about section */
 /* Higher z-index for scrolling content */
 #about, #portfolio, #contact {
     margin-top: 100vh; /* Matches header height */
-    background-color: violet;
+    background-color: #f7f7f7;
     position: relative;
     z-index: 2; /* Higher than the header */
     
+    
+}
+/* type writing with rainbow color */
+#dynamic-text {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow 5s linear infinite;
+}
+/* linkedin button */
+.linkedin-button {
+    position: absolute;
+    bottom: 15px;
+    right: 2%;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.linkedin-button:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* mobile section */
+@media screen and (max-width: 768px) {
+    #heroLogo {
+
+        justify-content: start;
+        /* margin-bottom: 20px; */
+        transform: translateY(-100%);
+    }
+    #heroText {
+        margin-left: 0;
+    }
+    /* hero text */
+    .herotext1 {
+        font-size: 60px;
+    }
+    .herotext2{
+        font-size: 40px;
+    }.herotext3 {
+        font-size: 40px;
+        
+    }
+
 }
 
 
