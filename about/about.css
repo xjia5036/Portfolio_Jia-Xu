@@ -1,6 +1,8 @@
 body {
     font-family: "Inter", serif;
     background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
 }
 #about {
     margin-top: 60px;
@@ -116,13 +118,19 @@ body {
 
 /* about content */
 #about {
-    padding: 50px 0;
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
 }
 
 #photo {
-    width: 80%;
+    width: 450px;
     height: auto;
+    border: #e9d923 solid 8px;
+    /* border-radius: 7%; */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
+
 
 .resume-images img {
     width: 100%;
@@ -133,17 +141,135 @@ body {
 #resumeContent {
     display: none;
 }
-#resumebtn .btn {
+#aboutContent .btn {
     background-color: #7b4184;
+    font-weight: bold;
 }
 
+/* slide in */
+.slide-in {
+    position: relative;
+    z-index: 1; /* 确保 h4 在动画结束时显示在图片上方 */
+    animation: slideInFromBehind 1.5s ease-out forwards;
+}
+
+@keyframes slideInFromBehind {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+        z-index: -1; /* 起始时在图片下方 */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 1; /* 结束时在图片上方 */
+    }
+}
+
+
+
+
+/* mobile section */
 @media (max-width: 767px) {
     #about .row {
         text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     #photo {
-        max-width: 80%;
+        max-width: 60%;
+        margin-bottom: 5px;
+    }
+    #aboutContent {
+        width: 95%;
         margin-bottom: 20px;
     }
+
+    #aboutContent p {
+        text-align: left;
+        margin-top: 20px;
+    
+    }
+    #upper {
+        margin-top: 30px;
+    }
+    /* slide in */
+    .slide-in {
+        animation: slideInFromTop 1.5s ease-out forwards;
+    }
+    
+    @keyframes slideInFromTop {
+        from {
+            opacity: 0;
+            transform: translateY(-20px); /* 从上方滑出 */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* resume button */
+    #resumebtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #toggleResumeBtn {
+        width:200px;
+    }
+    #toggleResumeBtn {
+        margin-top: 15px;
+  
+    }
+    #resume-images {
+        width: 95%;
+    }
 }
+/* desktop section */
+@media (min-width: 768px) {
+    #aboutContent {
+        width: 560px;
+        font-size: 20px;
+        /* text-align: justify; */
+        letter-spacing: 0.5px;
+        word-spacing: 0.1px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    #upper {
+        justify-content: center;
+        margin-top: 70px;
+        gap: 120px;
+    }
+    #aboutContent p {
+        margin-top: 40px;
+    }
+    #resumebtn {   
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        justify-content: left;
+
+
+    }
+    #toggleResumeBtn {
+        width: 200px;
+        margin-top: 45px;
+  
+    }
+
+    #resumeContent {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+    
+
+}
+
+
