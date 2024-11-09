@@ -110,11 +110,53 @@ body {
 }
 
 /* 默认桌面端样式 */
+/* #title {
+    margin-top: 150px;
+    text-align: center;
+} */
+/* title section */
+h1 {
+    width: 100%;
+    height: 60px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    position: relative;
+    color: #333; 
+    overflow: hidden;
+    margin: 140px 0 70px 0;
+    text-align: center;
+    /* margin-bottom: 0;
+    padding-bottom: 0; */
+  }
+  #title {
+    margin: 150px auto 50px;
+  }
+  /* 光滑效果 */
+  h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, #f7f7f7, transparent);
+    animation: shine 3s;
+  }  
+  /* 定义光滑过的动画 */
+  @keyframes shine {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  /* video section */
 .responsive-video {
     position: relative;
     width: 50%; /* 桌面端宽度为屏幕的一半 */
     padding-top: 28.125%; /* 16:9 比例 */
-    margin: 100px auto 0; /* 让容器居中 */
+    margin: 0 auto; /* 让容器居中 */
 }
 
 .responsive-video iframe {
@@ -127,21 +169,42 @@ body {
 }
 /* 描述文本容器 */
 .description {
-    margin-top: 15px;
-    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    /* padding-top: 30px; */
+    padding: 10px 15px 0;
     font-size: 16px;
+    /* font-weight: bold; */
+    /* background-color: #d4d4dc; */
     color: #333; /* 字体颜色 */
     line-height: 1.5;
-    max-width: 80%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+    border-top: #d4d4dc solid 2px;
+    border-bottom: #d4d4dc solid 2px;
+}
+h5 {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 /* 移动端样式 */
 @media (max-width: 767px) {
+    #title {
+        margin: 118px auto 0;
+      }
     .responsive-video {
         width: 100%; /* 移动端宽度为 100% */
         padding-top: 56.25%; /* 16:9 比例 */
-        margin-top: 80px;
+        margin-top: 0;
     }
+    .description {
+        width: 100%;
+    }
+    h1 {
+        font-size: xx-large;
+        margin: 120px 0 0px 0;
+      }
 }

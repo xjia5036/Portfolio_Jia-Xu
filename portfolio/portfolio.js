@@ -8,13 +8,13 @@ portfolioItems.forEach(item => {
   // 鼠标进入时显示遮罩和文字
   item.addEventListener('mouseenter', () => {
     overlay.style.opacity = 1; // 显示遮罩
-    overlay.style.backgroundColor = 'rgba(128, 0, 128, 0.3)'; // 显示紫色透明遮罩
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // 显示紫色透明遮罩
   });
   
   // 鼠标离开时隐藏遮罩和文字
   item.addEventListener('mouseleave', () => {
     overlay.style.opacity = 0; // 隐藏遮罩
-    overlay.style.backgroundColor = 'rgba(128, 0, 128, 0)'; // 隐藏紫色透明遮罩
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)'; // 隐藏紫色透明遮罩
   });
   
   // 鼠标点击时跳转到其他页面
