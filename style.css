@@ -194,6 +194,45 @@ header {
     transform: scale(1.1);
 }
 
+/* motion */
+/* CSS 样式 */
+.video-cover {
+    position: relative;
+    cursor: pointer;
+}
+
+.video-cover img {
+    width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色透明背景 */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button::before {
+    content: '';
+    display: block;
+    width: 0; 
+    height: 0;
+    border-left: 15px solid rgba(255, 255, 255, 1); /* 白色三角形 */
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 5px;
+}
+
+
 
 @keyframes rainbow {
     0% { background-position: 0% 50%; }

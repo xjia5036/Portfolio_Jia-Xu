@@ -1,11 +1,9 @@
-
-/* body styles */
 body {
     font-family: "Inter", serif;
     background-color: #f7f7f7;
-    color: #333; /* 字体颜色 */
+    display: flex;
+    justify-content: center;
 }
-
 /* navbar */
 .navbar {
     height: 80px;
@@ -109,62 +107,3 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* contact section */
-#contact {
-    margin-top: 70px;
-}
-
-
-/* form container */
-form {
-    margin-top: 40px;
-}
-.container {
-    gap: 20px;
-}
-
-/* logo effect */
-@keyframes ripple {
-    0% {
-        transform: translateY(20px) scale(1);
-        filter: blur(0px);
-    }
-    50% {
-        transform: translateY(10px) scale(1.05);
-        filter: blur(2px);
-    }
-    100% {
-        transform: translateY(0) scale(1);
-        filter: blur(0px);
-    }
-}
-
-.logo-effect {
-    animation: ripple 1.5s ease-in-out forwards; /* 设置时长1.5秒并运行一次 */
-}
-
-/* form styles */
-/* button styles */
-.btn-primary {
-    width: 100%;  /* Makes the button take the full width of the container */
-    height: 45px;
-    background-color: #7b4184; /* Replace with your specific purple hex code */
-    border-color: #7b4184;
-    font-weight: bold;
-    font-size: large;
-}
-
-.btn-primary:hover {
-    background-color: #5c0066; /* A slightly darker purple for hover effect */
-    border-color: #5c0066;
-}
-/* placeholder styles */
-::placeholder {
-    font-size: 0.9rem; /* Smaller text */
-}
-
-textarea {
-    resize: none; /* Disables resizing */
-}
-

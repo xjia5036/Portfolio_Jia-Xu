@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // type writing
-const words = ["UI/UX", "Graphic Design", "Motion Design", "3D", "and more"];
+const words = ["UI/UX", "Graphic Design", "Motion Design", "3D", "Business"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -62,4 +62,11 @@ function typeEffect() {
 }
 
 typeEffect();
+
+// JavaScript 点击事件处理
+function showVideo() {
+    // 隐藏封面图片，显示 YouTube 视频
+    document.querySelector('.video-cover').style.display = 'none';
+    document.getElementById('youtubeVideo').style.display = 'block';
+}
 

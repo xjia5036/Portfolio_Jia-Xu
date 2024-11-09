@@ -3,6 +3,7 @@ body {
     background-color: #f7f7f7;
     display: flex;
     justify-content: center;
+    color: #333; /* 字体颜色 */
 }
 #about {
     margin-top: 60px;

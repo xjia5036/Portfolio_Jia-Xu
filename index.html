@@ -39,7 +39,7 @@
                 
                 <div class="offcanvas-body">
                     <ul class="navbar-nav d-lg-none d-flex align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html" style="color: #e16eaa;">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="about/about.html">ABOUT</a></li>
                     <li class="nav-item"><a class="nav-link" href="portfolio/portfolio.html">PORTPOLIO</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>                        
@@ -51,7 +51,7 @@
             <!-- hidden navagation -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto text-center">
-                    <li class="nav-item" ><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="index.html" style="color: #e16eaa;">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="about/about.html">ABOUT</a></li>
                     <li class="nav-item"><a class="nav-link" href="portfolio/portfolio.html">PORTPOLIO</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
@@ -128,19 +128,55 @@
                         </div>
                     </div>
                 </div>
+                <!-- Interactive Media Business -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="[marketing-strategy-image-url]" class="card-img-top" alt="Interactive Media Business">
+                        <div class="card-body">
+                            <h5 class="card-title">Interactive Media Business</h5>
+                            <p class="card-text">Marketing strategy and campaign design.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Motion Design -->
                 <!-- Motion Design -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
-                        <video controls class="w-100">
-                            <source src="[motion-design-video.mp4]" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <!-- 封面图片容器 -->
+                        <div class="video-cover" onclick="showVideo()">
+                            <img src="assets/images/FInd your greatness039.jpg" alt="Video Cover" class="img-fluid">
+                            <div class="play-button"></div> <!-- 自定义播放按钮 -->
+                        </div>
+                        
+                        <!-- YouTube iframe（默认隐藏） -->
+                        <iframe 
+                            id="youtubeVideo"
+                            class="w-100" 
+                            height="315"
+                            src="https://www.youtube.com/embed/Tg9icABFSNY?autoplay=1&mute=1&controls=1&showinfo=0&modestbranding=1&rel=0" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="autoplay; encrypted-media; picture-in-picture" 
+                            allowfullscreen
+                            style="display: none;">
+                        </iframe>
+                
                         <div class="card-body">
                             <h5 class="card-title">Motion Design</h5>
                             <p class="card-text">An animation video showcasing my skills.</p>
                         </div>
                     </div>
                 </div>
+                
+                
+
+                
+
+
+
+                
+
                 <!-- 3D Projects -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
@@ -166,16 +202,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Interactive Media Business -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="[marketing-strategy-image-url]" class="card-img-top" alt="Interactive Media Business">
-                        <div class="card-body">
-                            <h5 class="card-title">Interactive Media Business</h5>
-                            <p class="card-text">Marketing strategy and campaign design.</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>

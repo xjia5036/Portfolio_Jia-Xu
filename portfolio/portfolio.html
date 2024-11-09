@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- Imperial Script -->
     <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    
+    <!-- Playwrite England SemiJoined -->
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- AOS Library for animations -->
@@ -25,7 +26,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container" id="contactNav">
-            <a class="navbar-brand" href="index.html"><span id="typed-output">Jia Xu</span></a>
+            <a class="navbar-brand" href="../index.html"><span id="typed-output">Jia Xu</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,7 +41,7 @@
                     <ul class="navbar-nav d-lg-none d-flex align-items-center">
                       <li class="nav-item"><a class="nav-link" href="../index.html">HOME</a></li>
                       <li class="nav-item"><a class="nav-link" href="../about/about.html">ABOUT</a></li>
-                      <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                      <li class="nav-item"><a class="nav-link" href="portfolio.html"  style="color: #e16eaa;">PORTFOLIO</a></li>
                       <li class="nav-item"><a class="nav-link" href="../contact.html">CONTACT</a></li>                        
                     </ul>
                 </div>
@@ -51,12 +52,78 @@
                 <ul class="navbar-nav ms-auto text-center">
                     <li class="nav-item" ><a class="nav-link" href="../index.html">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="../about/about.html">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html"  style="color: #e16eaa;">PORTFOLIO</a></li>
                     <li class="nav-item"><a class="nav-link" href="../contact.html">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+    <div id="portfolio-grid" class="container d-flex justify-content-center">
+      <h1 data-text="My Portfolio">My Portfolio</h1>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 mb-4 portfolio-item">
+            <a href="../ux/ux.html">
+              <div class="image-container">
+                <img src="../assets/images/magazine-1.png" alt="UX Design" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <h3>UX Design</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 portfolio-item">
+            <a href="../motion/motion.html">
+              <div class="image-container">
+                <img src="../assets/images/FInd your greatness039.jpg" alt="Motion Design" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <h3>Motion Design</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 portfolio-item">
+            <a href="../graphic/graphic.html">
+              <div class="image-container">
+                <img src="../assets/images/magazine-1.png" alt="Graphic Design" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <h3>Graphic Design</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 portfolio-item">
+            <a href="../business/business.html">
+              <div class="image-container">
+                <img src="../assets/images/magazine-1.png" alt="Interactive Media Business" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <h3>Interactive Media Business</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 portfolio-item">
+            <a href="../3D/3D.html">
+              <div class="image-container d-flex align-items-center justify-content-center">
+                <img src="../assets/images/Bakelite radios_Jia Xu-Camera_46.png" alt="3D Design" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <h3>3D</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 portfolio-item">
+            <!-- Empty column or add other content -->
+          </div>
+        </div>
+      </div>
+      
+  
+  
+    
+
+  
+  
     <!-- AOS and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -64,6 +131,6 @@
     <script>
         AOS.init(); // Initialize AOS animations
     </script>
-
+    <script src="portfolio.js"></script>
 </body>
 </html>
