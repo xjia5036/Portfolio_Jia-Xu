@@ -126,18 +126,20 @@ header {
 /* #hero {
     background-image: url(../Portfolio_Jia-Xu/assets/images/final\ staging-Camera_084.png);
 } */
-#hero .container{
+#adjust{
     width: 100%;
-    justify-content: space-between;
-}
-#heroLogo {
-    /* transform: translateX(-20%); */
-    margin: 0 auto;
-}
-#heroLink {
-    transform: translateX(80%);
+    justify-content: space-evenly;
     
 }
+#heroLogo {
+    width: 400px;
+    /* transform: translateX(-20%); */
+    margin: 0;
+}
+/* #heroLink {
+    transform: translateX(80%);
+    
+} */
 #heroLink .btn {
     font-size: large;
     color:white;
@@ -151,6 +153,7 @@ header {
 }
 #heroText {
     font-family: "Alumni Sans Pinstripe", sans-serif;
+    /* width:50%; */
     /* margin-left: 200px; */
 }
 .herotext1 {
@@ -251,6 +254,8 @@ header {
     }
     #heroText {
         margin-left: 0;
+
+        
     }
     /* hero text */
     .herotext1 {
