@@ -12,7 +12,8 @@ body {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* 调整阴影的透明度 */
-    transition: opacity 1s ease, visibility 1s ease; /* Adds smooth fading effect */
+    transition: opacity 2s ease, visibility 2s ease; /* Adds smooth fading effect */
+    transition: top 1s;
 }
 .container {
     display: flex;
@@ -126,6 +127,7 @@ header {
     background-image: url(../Portfolio_Jia-Xu/assets/images/final\ staging-Camera_084.png);
 } */
 #hero .container{
+    width: 100%;
     justify-content: space-between;
 }
 #heroLogo {
@@ -149,7 +151,7 @@ header {
 }
 #heroText {
     font-family: "Alumni Sans Pinstripe", sans-serif;
-    margin-left: 200px;
+    /* margin-left: 200px; */
 }
 .herotext1 {
     font-size: 100px;
