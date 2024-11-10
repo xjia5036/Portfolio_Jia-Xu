@@ -146,6 +146,10 @@ body {
     background-color: #7b4184;
     font-weight: bold;
 }
+#aboutContent .btn:hover {
+    background-color: #7b4184;
+    color:#e16eaa;
+}
 
 /* slide in */
 .slide-in {

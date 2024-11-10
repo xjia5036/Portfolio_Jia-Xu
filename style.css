@@ -171,7 +171,7 @@ header {
 }
 /* about section */
 /* Higher z-index for scrolling content */
-#about, #portfolio, #contact {
+#about{
     margin-top: 100vh; /* Matches header height */
     background-color: #f7f7f7;
     position: relative;

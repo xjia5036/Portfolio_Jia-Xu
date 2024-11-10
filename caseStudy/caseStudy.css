@@ -1,0 +1,110 @@
+body {
+    font-family: "Inter", serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+/* navbar */
+.navbar {
+    height: 80px;
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* 调整阴影的透明度 */
+    transition: opacity 1s ease, visibility 1s ease; /* Adds smooth fading effect */
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.custom-navbar {
+    background-color: #7b4184 !important;/* 强制应用背景色*/
+    /* background-color: rgba(123, 65, 132, 0.5) !important; 半透明背景色 */
+    /* background-color: rgba(225, 110, 170, 0.5) !important; 半透明粉色 */
+    
+}
+
+
+.custom-navbar .navbar-brand {
+    color: white; /* 强制应用白色文字 */ 
+}
+
+.custom-navbar .nav-link {
+    color: #ffffff; /* 强制应用文字颜色 */
+}
+/* handwriting name*/
+/* @keyframes handwriting {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+} */
+/* burger menu white */
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 viewBox%3D%220 0 30 30%22%3E%3Cpath stroke%3D%22white%22 stroke-width%3D%222%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+}
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.navbar-toggler:hover {
+    background-color: #7b4184;
+    box-shadow: 0 0 10px rgba(123, 65, 132, 0.2); /* Adds a subtle shadow */
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* link hover */
+/* Hover effect for navbar links */
+.navbar-nav .nav-link:hover {
+    color: #e16eaa; /* Change this color to any you like */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+/* pop up menu*/
+#offcanvasNav {
+    width: 100%;  /* Make the off-canvas take full screen width */
+    background-color: #7b4184;
+}
+.offcanvas-body {
+    font-weight: 500;
+    font-size: x-large;
+}
+.offcanvas-body .navbar-nav{
+    margin-top: 100px;
+}
+/* close button */
+.offcanvas-header {
+    position: relative;
+}
+
+.btn-close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+
+.navbar-brand {
+    font-family: "Imperial Script", cursive;
+    font-weight: 400;
+    font-size: 40px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: handwriting 4s steps(30) forwards; /* 修改为 forwards，动画结束时保持最后状态 */
+    animation-iteration-count: 1; /* 动画只执行一次 */
+    margin: 0;
+    padding: 0;
+}
+
