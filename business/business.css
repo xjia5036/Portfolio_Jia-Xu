@@ -3,6 +3,9 @@ body {
     background-color: #f7f7f7;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
 }
 /* navbar */
 .navbar {
@@ -106,4 +109,225 @@ body {
     animation-iteration-count: 1; /* 动画只执行一次 */
     margin: 0;
     padding: 0;
+}
+
+/* card section */
+
+/* title section */
+h1 {
+    width: 100%;
+    height: 60px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    position: relative;
+    color: #333; 
+    overflow: hidden;
+    /* margin: 140px 0 70px 0; */
+    text-align: center;
+    /* margin-bottom: 0;
+    padding-bottom: 0; */
+  }
+  #title {
+    margin: 120px auto 10px;
+  }
+  /* 光滑效果 */
+  h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, #f7f7f7, transparent);
+    animation: shine 3s;
+  }  
+  /* 定义光滑过的动画 */
+  @keyframes shine {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  /* video section */
+.responsive-video {
+    position: relative;
+    width: 50%; /* 桌面端宽度为屏幕的一半 */
+    /* padding-top: 28.125%; 16:9 比例 */
+    margin: 0 auto; /* 让容器居中 */
+}
+
+.responsive-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+}
+/* 描述文本容器 */
+.description {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    /* padding-top: 30px; */
+    padding: 10px 15px 0;
+    font-size: 16px;
+    /* font-weight: bold; */
+    /* background-color: #d4d4dc; */
+    color: #333; /* 字体颜色 */
+    line-height: 1.5;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-top: #d4d4dc solid 2px;
+    border-bottom: #d4d4dc solid 2px;
+}
+h5 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* images slide in and out */
+.carousel {
+    position: relative;
+    max-width: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slides a {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.258);
+    color: white;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+/* button */
+#case-studies-container_1, #case-studies-container_2 {
+    width: 50%;
+    margin-bottom: 40px;
+}
+.case-studies-container img {
+    width: 100%;
+    /* max-width: 300px; */
+    margin: 10px;
+    display: inline-block;
+    /* 其他样式 */
+}
+
+#show-cases-btn_1, #show-cases-btn_2{
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    background-color: #7b4184;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width:200px;
+    border-radius: 8px;
+}
+
+#show-cases-btn_1:hover, #show-cases-btn_2:hover{
+    color:#e16eaa;
+}
+
+
+/* additio */
+.carousel {
+    position: relative;
+    max-width: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+/* 移动端样式 */
+@media (max-width: 767px) {
+    #title {
+        margin: 118px auto 0;
+      }
+    .responsive-video {
+        width: 100%; /* 移动端宽度为 100% */
+        /* padding-top: 56.25%; 16:9 比例 */
+        margin-top: 0;
+    }
+    .description {
+        width: 100%;
+    }
+    h1 {
+        font-size: xx-large;
+        margin: 120px 0 0px 0;
+      }
+
+    .carousel {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    #case-studies-container_1, #case-studies-container_2{
+        width: 100%;
+    }
 }

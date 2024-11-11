@@ -129,7 +129,7 @@ h1 {
     padding-bottom: 0; */
   }
   #title {
-    margin: 150px auto 50px;
+    margin: 120px auto 10px;
   }
   /* 光滑效果 */
   h1::before {

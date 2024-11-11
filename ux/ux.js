@@ -1,23 +1,3 @@
-// let currentSlide = 0;
-
-// function showSlide(index) {
-//     const slides = document.querySelector('.carousel-slides');
-//     const totalSlides = slides.children.length;
-    
-//     // Loop back to first or last slide if at boundaries
-//     currentSlide = (index + totalSlides) % totalSlides;
-    
-//     // Adjust slide position
-//     slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-// }
-
-// function moveSlides(step) {
-//     showSlide(currentSlide + step);
-// }
-
-// // Initialize carousel
-// showSlide(currentSlide);
-
 let currentIndex = 0;
 const slides = document.querySelectorAll('.carousel-slides a');
 const totalSlides = slides.length;
@@ -60,9 +40,9 @@ showCasesBtn.addEventListener('click', () => {
     // 切换容器的显示状态
     if (caseStudiesContainer.style.display === 'none') {
         caseStudiesContainer.style.display = 'block';
-        showCasesBtn.textContent = 'Hide Case Study'; // 更新按钮文本
+        showCasesBtn.textContent = 'Hide Content'; // 更新按钮文本
     } else {
         caseStudiesContainer.style.display = 'none';
-        showCasesBtn.textContent = 'Show Case Study'; // 更新按钮文本
+        showCasesBtn.textContent = 'Show Content'; // 更新按钮文本
     }
 });

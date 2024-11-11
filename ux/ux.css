@@ -122,13 +122,13 @@ h1 {
     position: relative;
     color: #333; 
     overflow: hidden;
-    margin: 140px 0 70px 0;
+    /* margin: 140px 0 70px 0; */
     text-align: center;
     /* margin-bottom: 0;
     padding-bottom: 0; */
   }
   #title {
-    margin: 150px auto 50px;
+    margin: 120px auto 10px;
   }
   /* 光滑效果 */
   h1::before {
@@ -169,7 +169,7 @@ h1 {
 /* 描述文本容器 */
 .description {
     margin-top: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     /* padding-top: 30px; */
     padding: 10px 15px 0;
     font-size: 16px;
@@ -194,7 +194,7 @@ h5 {
     position: relative;
     max-width: 50%;
     overflow: hidden;
-    margin: 100px auto 0;
+    margin: 0 auto;
 }
 
 .carousel-slides {
@@ -247,7 +247,7 @@ h5 {
 }
 
 #show-cases-btn {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 10px 20px;
     background-color: #7b4184;
     color: white;
@@ -285,7 +285,7 @@ h5 {
         position: relative;
         max-width: 100%;
         overflow: hidden;
-        margin: 80px auto 0;
+        margin: 0 auto;
     }
     #case-studies-container {
         width: 100%;
