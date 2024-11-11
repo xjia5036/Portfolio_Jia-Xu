@@ -18,7 +18,7 @@ portfolioItems.forEach(item => {
   });
   
   // 鼠标点击时跳转到其他页面
-  item.addEventListener('click', () => {
-    window.location.href = 'https://example.com'; // 修改为目标链接
-  });
+  // item.addEventListener('click', () => {
+  //   window.location.href = 'https://example.com'; // 修改为目标链接
+  // });
 });

@@ -248,7 +248,7 @@ h5 {
 }
 
 #show-cases-btn_1, #show-cases-btn_2{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     padding: 10px 20px;
     background-color: #7b4184;
     color: white;
@@ -329,5 +329,17 @@ h5 {
     }
     #case-studies-container_1, #case-studies-container_2{
         width: 100%;
+    }
+    #show-cases-btn_1, #show-cases-btn_2{
+        margin-bottom: 50px;
+        padding: 10px 20px;
+        background-color: #7b4184;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 8px;
+        font-size: 15px;
+        width:150px;
     }
 }

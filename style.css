@@ -186,12 +186,20 @@ header {
     color: transparent;
     animation: rainbow 5s linear infinite;
 }
-/* linkedin button */
-.linkedin-button {
+
+/* bottom section */
+#bottom {
     position: absolute;
     bottom: 15px;
     right: 2%;
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/* linkedin button */
+.linkedin-button {
+    /* padding: 10px; */
     transition: transform 0.3s ease;
 }
 
