@@ -180,6 +180,7 @@ h5 {
     max-width: 50%;
     overflow: hidden;
     margin: 0 auto;
+    border-radius: 20px;
 }
 
 .carousel-slides {
@@ -229,7 +230,7 @@ h5 {
 .case-studies-container img {
     width: 100%;
     /* max-width: 300px; */
-    margin: 10px;
+    margin: 10px 0;
     display: inline-block;
     /* 其他样式 */
 }
