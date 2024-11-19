@@ -123,3 +123,23 @@ function moveSlide2(direction) {
 }
 
 updateSlidePosition2();
+
+// back ti top btn
+// 获取返回顶部按钮
+const backToTopButton = document.getElementById("backToTop");
+
+// 当页面滚动时，检查滚动位置
+window.onscroll = function() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        // 当滚动超过 300px 时显示按钮
+        backToTopButton.style.display = "block";
+    } else {
+        // 否则隐藏按钮
+        backToTopButton.style.display = "none";
+    }
+};
+
+// 点击按钮返回顶部
+backToTopButton.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // 平滑滚动到顶部
+};

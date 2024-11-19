@@ -150,7 +150,39 @@ h1 {
       left: 100%;
     }
   }
- 
+
+/* subnav */
+.carousel-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 控制链接之间的间距 */
+    margin-bottom: 20px; /* 给链接区块加点下边距 */
+}
+
+.carousel-links a {
+    text-decoration: none; /* 去掉下划线 */
+    
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: #333; /* 设置字体颜色 */
+    padding: 8px 16px; /* 给链接加内边距 */
+    /* border: 2px solid transparent; 添加透明边框，使得悬停时能显示 */
+    border-radius: 5px; /* 圆角效果 */
+    transition: all 0.3s ease; /* 加动画，使悬停效果更平滑 */
+}
+
+/* 悬停效果 */
+.carousel-links a:hover {
+    background-color: #7b4184; /* 悬停时的背景色 */
+    color: white; /* 悬停时字体颜色 */
+    border-color: #333; /* 悬停时边框颜色 */
+}
+
+.carousel-links a:focus {
+    outline: none; /* 去掉点击后的蓝色边框 */
+    box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.2); /* 添加焦点时的阴影 */
+}
+
 /* 描述文本容器 */
 .description {
     margin-top: 25px;
@@ -249,6 +281,31 @@ h5 {
 
 #show-cases-btn_1:hover, #show-cases-btn_2:hover, #show-cases-btn_3:hover{
     color:#e16eaa;
+}
+
+/* back to top btn */
+/* 返回顶部按钮样式 */
+#backToTop {
+    position: fixed;
+    bottom: 20px; /* 距离底部 20px */
+    right: 20px;  /* 距离右边 20px */
+    background-color: #7b4184; /* 背景色 */
+    color: white; /* 字体颜色 */
+    border: none; /* 去除边框 */
+    border-radius: 50%; /* 圆形按钮 */
+    width: 50px; /* 按钮宽度 */
+    height: 50px; /* 按钮高度 */
+    font-size: 24px; /* 字体大小 */
+    display: none; /* 初始时隐藏 */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* 鼠标悬停时变为手型 */
+    transition: opacity 0.3s ease; /* 平滑的透明度过渡 */
+}
+
+/* 鼠标悬停效果 */
+#backToTop:hover {
+    background-color: #6a3369; /* 悬停时的背景色 */
 }
 
 
