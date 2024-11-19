@@ -226,6 +226,7 @@ body {
         width:230px;
         height: 40px;
         font-size: 15px;
+        border: none;
     }
     #toggleResumeBtn {
         margin-top: 15px;
@@ -260,6 +261,7 @@ body {
         flex-direction: column;
         margin-top: 100px;
         justify-content: left;
+        
 
 
     }
@@ -267,6 +269,7 @@ body {
         width: 240px;
         height: 45px;
         margin-top: 45px;
+        border: none;
   
     }
 
