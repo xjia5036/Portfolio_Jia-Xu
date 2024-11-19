@@ -168,7 +168,12 @@ h1 {
     padding: 8px 16px; /* 给链接加内边距 */
     /* border: 2px solid transparent; 添加透明边框，使得悬停时能显示 */
     border-radius: 5px; /* 圆角效果 */
-    transition: all 0.3s ease; /* 加动画，使悬停效果更平滑 */
+    transition: all 0.5s ease; /* 加动画，使悬停效果更平滑 */
+
+    text-decoration: underline; /* 设置文字下划线 */
+    text-decoration-thickness: 1.5px; /* 设置下划线的粗细 */
+    text-decoration-color: #333; /* 设置下划线颜色 */
+    text-underline-offset:7px; /* 设置下划线与文字之间的距离 */
 }
 
 /* 悬停效果 */
@@ -176,6 +181,7 @@ h1 {
     background-color: #7b4184; /* 悬停时的背景色 */
     color: white; /* 悬停时字体颜色 */
     border-color: #333; /* 悬停时边框颜色 */
+    text-decoration: none;
 }
 
 .carousel-links a:focus {
@@ -368,7 +374,10 @@ h5 {
         font-size: xx-large;
         margin: 120px 0 0px 0;
       }
-
+    .carousel-links a {
+    
+    font-size: 14px;
+    }
     .carousel {
         position: relative;
         max-width: 100%;
