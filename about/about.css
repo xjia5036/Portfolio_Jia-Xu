@@ -133,7 +133,7 @@ body {
 }
 
 
-.resume-images img {
+/* .resume-images img {
     width: 100%;
     height: auto;
     margin-top: 20px;
@@ -141,7 +141,7 @@ body {
 
 #resumeContent {
     display: none;
-}
+} */
 #aboutContent .btn {
     background-color: #7b4184;
     font-weight: bold;
